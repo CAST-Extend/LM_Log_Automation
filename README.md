@@ -60,13 +60,13 @@ Replace <path-to-dot-net-log-file> and <path-to-java-log-file> with the actual p
 Example Command for .NET Logs
 
 ```bash
-python log_validation_for_dot_net.py ./logs/dot_net_example.log
+python log_validation_for_dot_net.py ./logs/dot_net_example
 ```
 
 Example Command for Java Logs
 
 ```bash
-python log_validation_for_java.py ./logs/java_example.log
+python log_validation_for_java.py ./logs/java_example
 ```
 
 ### File Structure
