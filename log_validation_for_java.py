@@ -33,22 +33,22 @@ def log_validation(dot_csv_file, file_name):
             lines = f.readlines()
             for line in lines:
                 # code_pattern_list.append(1)
-                if 'lmig' in line.lower():
-                    result = extract_strings_with_single_quotes(line)
-                    # print(result)
-                    result_2 = extract_data_between_first_and_second_single_quotes(line)
-                    # print(result_2)
-                    if len(result) < 3 or result is None:
-                        logging.info(line)
-                    else:
-                        global count
-                        app_name = file_name
-                        missing_object = result[1]+'.'+result[0]
-                        missing_object_full_name = result_2
-                        missing_object_type = result[2]
-                        if 'lm' in missing_object.lower():
-                            extracted_data.append([count, app_name, missing_object, missing_object_full_name, missing_object_type])
-                            count += 1
+                # if 'lmig' in line.lower():
+                result = extract_strings_with_single_quotes(line)
+                # print(result)
+                result_2 = extract_data_between_first_and_second_single_quotes(line)
+                # print(result_2)
+                if len(result) < 3 or result is None:
+                    logging.info(line)
+                else:
+                    global count
+                    app_name = file_name
+                    missing_object = result[1]+'.'+result[0]
+                    missing_object_full_name = result_2
+                    missing_object_type = result[2]
+                    # if 'lm' in missing_object.lower():
+                    extracted_data.append([count, app_name, missing_object, missing_object_full_name, missing_object_type])
+                    count += 1
 
     except Exception as e:
         print("Some Exception Occured !\n Please resolve or contact developers.\n"+str(e))
