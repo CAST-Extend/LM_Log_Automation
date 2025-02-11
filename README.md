@@ -1,8 +1,8 @@
-# **LM LOG AUTOMATION**
+# **LOG AUTOMATION**
 
 ### Overview
 
-LM Log Automation is a Python-based project designed to validate and process log files for .NET and Java applications. This tool streamlines log validation and helps ensure consistency in your logs.
+Log Automation is a Python-based project designed to validate and process log files for .NET and Java applications. This tool streamlines log validation and helps ensure consistency in your logs.
 
 ### Features
 
@@ -24,7 +24,7 @@ Ensure you have the following installed on your system:
 
 ```bash
 git clone <repository-url>
-cd LM_Log_Automation-main
+cd Log_Automation-main
 ```
 
 - Install the required dependencies:
@@ -72,7 +72,7 @@ python log_validation_for_java.py ./logs/java_example
 ### File Structure
 
 ```python
-LM_Log_Automation-main/
+Log_Automation-main/
 |-- README.md
 |-- requirements.txt
 |-- log_validation_for_dot_net.py
